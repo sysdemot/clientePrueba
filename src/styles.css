@@ -1,1 +1,290 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/** ===================== Authentication ========================== **/
+.auth-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: rgba(117, 22, 195, 0.7);
+}
+
+.imagen-fondo {
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: url("assets/img/workers.png");
+}
+@media (min-width: 1200px) {
+  .auth-wrapper .container {
+    max-width: 1140px;
+  }
+}
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .auth-wrapper {
+    display: block;
+    margin: 0 auto;
+  }
+  .auth-wrapper > .row {
+    min-height: 100vh;
+  }
+  .auth-wrapper > .row > .aut-bg-img {
+    min-height: 100vh;
+  }
+}
+.auth-wrapper .saprator {
+  position: relative;
+  margin: 8px 0;
+}
+.auth-wrapper .saprator span {
+  background: #fff;
+  position: relative;
+  padding: 0 10px;
+  z-index: 5;
+  font-size: 20px;
+}
+.auth-wrapper .saprator:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ff5370;
+  z-index: 1;
+}
+.auth-wrapper a,
+.auth-wrapper p > a {
+  color: #f3e216;
+  font-weight: 600;
+}
+.auth-wrapper .input-group {
+  background: transparent;
+}
+.auth-wrapper .card {
+  margin-bottom: 0;
+  padding: 8px;
+  box-shadow: 0 2px 18px -2px rgba(0, 0, 0, 0.5);
+}
+.auth-wrapper .card .card-body {
+  padding: 20px 25px 20px 40px;
+}
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .auth-wrapper .card {
+    display: block;
+  }
+}
+.auth-wrapper > div {
+  z-index: 5;
+}
+.fondo-blanco {
+  background: #fff;
+}
+
+.border-form {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 150px;
+}
+
+.pl-sub-text-logo {
+  padding-left: 45px;
+}
+
+.auth-wrapper .auth-content {
+  position: relative;
+  padding: 15px;
+  z-index: 5;
+}
+.auth-wrapper .auth-content:not(.container) {
+  width: 400px;
+}
+.auth-wrapper .auth-content:not(.container) .card-body {
+  padding: 40px 35px;
+}
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .auth-wrapper .auth-content {
+    margin: 0 auto;
+  }
+}
+.auth-wrapper .auth-side-img {
+  padding-right: 400px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .pr-auth-side-form {
+    padding-right: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pr-auth-side-form {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .pr-auth-side-form {
+    padding-right: 100px;
+  }
+
+  .auth-wrapper .auth-side-img {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .pr-auth-side-form {
+    padding-right: 150px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .auth-wrapper .auth-side-img {
+    display: none;
+  }
+  .pr-auth-side-form {
+    padding-right: 0px;
+  }
+}
+
+.auth-wrapper .auth-side-form {
+  position: relative;
+  min-height: 100%;
+  display: inline-flex;
+  align-items: center;
+  left: auto;
+  float: right;
+}
+.auth-wrapper .auth-side-form > * {
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (max-width: 991px) {
+  .auth-wrapper .auth-side-form {
+    width: 100%;
+    justify-content: center;
+  }
+  .auth-wrapper .auth-side-form .auth-content:not(.container) {
+    max-width: 350px;
+  }
+}
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .auth-wrapper.aut-bg-img .auth-side-form {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .auth-wrapper .card .card-body {
+    padding: 30px 15px;
+  }
+  .auth-side-form {
+    width: 60%;
+  }
+}
+.auth-wrapper.offline {
+  background-image: none;
+}
+.auth-wrapper.offline h1 {
+  font-size: 87px;
+  font-weight: 700;
+}
+.auth-wrapper.offline:before {
+  display: none;
+}
+.auth-wrapper .card-body .carousel-indicators {
+  margin: 15px 0 10px;
+  bottom: 0;
+}
+.auth-wrapper .card-body .carousel-indicators li {
+  width: 50px;
+  background-color: rgba(255, 83, 112, 0.4);
+  border-radius: 5px;
+  height: 4px;
+}
+.auth-wrapper .card-body .carousel-indicators li.active {
+  background-color: #ff5370;
+}
+.auth-wrapper .img-logo-overlay {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+.aut-bg-img {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.aut-bg-img .auth-content {
+  padding: 70px 40px;
+}
+
+.tittle-morado {
+  color: rgb(117, 22, 195);
+}
+
+/** ===================== Icons ========================== **/
+
+.big {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.big-xl {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.flip-h {
+  transform: scale(-1, 1);
+}
+
+.icon-morado {
+  color: rgb(117, 22, 195);
+}
+
+.icon-blanco {
+  color: rgb(255, 255, 255);
+}
+
+.fill-gris {
+  fill: rgb(128, 122, 133);
+}
+
+span.field-icon {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  right: 0.5rem;
+  top: 0.4rem;
+  z-index: 2;
+}
+
+/** ===================== Buttons ========================== **/
+
+.btn.btn-login {
+  background: linear-gradient(
+    180deg,
+    rgb(146, 79, 201) 0%,
+    rgb(59, 7, 102) 100%
+  );
+  cursor: "pointer";
+  color: #ffffff;
+}
+.btn.btn-login:hover,
+.btn.btn-login:focus,
+.btn.btn-login:active,
+.btn.btn-login.active {
+  color: #ffffff;
+  background-color: rgb(134, 71, 185);
+  border-color: rgb(121, 48, 180);
+  cursor: "pointer";
+}
