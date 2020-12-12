@@ -34,13 +34,6 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    /* const json = { usuario: "malzamoraflores@prueba.com",
-    contrasena:"123456"};
-    this._authenticationService.signup(json).subscribe(
-      response => {
-        console.log(response);
-      }
-    );*/
   }
 
   login(body: Login){
@@ -74,7 +67,4 @@ export class LoginComponent implements OnInit {
     }  
   }
 
-  onSubmit() {
-    console.log(this.loginData);
-  }
 }

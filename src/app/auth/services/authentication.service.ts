@@ -15,9 +15,9 @@ export class AuthenticationService {
   }
 
   signup(json: Login): Observable<any> {
-    let body = JSON.stringify(json);
+    const body = JSON.stringify(json);
 
-    let headers = new HttpHeaders().set("Content-Type", "application/json");
+    const headers = new HttpHeaders().set("Content-Type", "application/json");
 
     return this._http.post(this.url, body, { headers: headers });
   }
