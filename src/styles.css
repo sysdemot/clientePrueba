@@ -15,7 +15,6 @@
 .imagen-fondo {
   min-height: 100vh;
   min-width: 100%;
-  background-image: url("assets/img/workers.png");
 }
 @media (min-width: 1200px) {
   .auth-wrapper .container {
